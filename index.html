@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="quiz_title" id="quiz_title">
+        <h1>
+            Quiz
+        </h1>
+    </div>
+
+
+<div class="quiestion_container" id="quiz_containeer">
+      <div class="quiestion_card" id="q_card">
+        <div class="quiestion"  id="qus" >
+            <h3 id="q_title">
+                quiestion is written hear
+            </h3>
+            <br>
+            <div class="options">
+               <div class="option_container" >
+                <input type="radio" onchange="ans(this)"  id="0"  name="answer" value="0" >
+                <label for="0" id="op0">
+                   Option1
+                </label>
+               </div> <br>
+                <div class="option_container">
+                    <input type="radio" onchange="ans(this)"  id="1" name="answer"  value="1">
+                <label for="1" id="op1">
+                    Option2
+                 </label> 
+                </div>
+                 <br>
+                 <div class="option_container" >
+                <input type="radio"onchange="ans(this)"  id="2" name="answer"  value="2">
+                <label for="2" id="op2">
+                    Option3
+                 </label> 
+                 </div>
+                 <br>
+                 <div class="option_container">
+                <input type="radio" name="answer"onchange="ans(this)"   id="3" value="3">
+                <label for="3" id="op3">
+                    Option4
+                 </label> 
+                 </div>
+                 <br>
+            </div>
+        </div>
+        <div class="correct_innccorrect" id="right_wrong">
+            Correcct
+        </div>
+        <button  class="submit" id="sub" onclick="sub()">
+            submit
+          </button>
+
+
+          <button class="next" id="next" onclick="next()"   type="reset" >
+            Next
+          </button>
+      </div>
+</div>
+
+
+<div class="last_page_conainer" id="last_page_container">
+    <div class="answer_key_conatainer" id="last_page">
+        <h1>
+            Answers and Score
+        </h1>
+       <div class="answer_score_card">
+        <div class="answerkey_card" id="answerKey"> 
+        
+        </div>
+        <div class="score" id="score">
+           <button       onclick="restart()">
+                 Restart
+           </button>
+        </div>
+       </div>
+    </div>
+</div>
+
+
+</body>
+<script src="./index.js">
+  
+const x="5334"
+
+
+
+</script>
+</html>
